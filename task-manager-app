@@ -1,0 +1,53 @@
+Assignment: Task Manager Application
+
+Objective: Create a Task Manager web application using JavaScript that follows the MVC design pattern. The application should allow users to register and log in, manage tasks with CRUD operations, and persist user data in localStorage.
+
+Requirements
+
+1. User Registration and Login (Local Storage)
+
+	•	Registration: Allow users to register with basic information (username and password). Save this information to localStorage.
+	•	Login: Validate user login by checking credentials against the data stored in localStorage.
+	•	Validation: Ensure strong validation for registration and login:
+	•	Username should be unique.
+	•	Password should be at least 8 characters long, containing letters and numbers.
+
+2. MVC Structure
+
+Organize your code using the MVC (Model-View-Controller) design pattern
+
+3. Task CRUD Operations
+
+	•	Create: Add a new task with properties such as title, description, due date, and priority.
+	•	Validate that the title and description are not empty.
+	•	Read: Display tasks in a grid format.
+	•	Update: Allow users to edit a task’s title, description, due date, and priority.
+	•	Upon updating, the task details should be saved back to localStorage.
+	•	Delete: Allow users to delete tasks, which should remove them from localStorage
+
+4. Task Features
+
+	•	Search: Implement a search feature to filter tasks by title.
+	•	Sort: Add options to sort tasks by priority, due date, or title.
+	•	Validation:
+	•	Ensure all required fields (title, description) are filled when creating or editing tasks.
+	•	Validate date input to ensure the due date is in the future.
+
+5. API Integration
+
+	•	Use the JSONPlaceholder API (or any other mock API) for simulating a task fetch operation:
+	•	When the user logs in, fetch example tasks from the API and populate them in the task list.
+	•	Tasks fetched from the API should be saved to localStorage along with user-created tasks
+
+
+Sample JSON for API Integration 
+[
+  {
+    "id": 1,
+    "title": "Sample Task",
+    "description": "This is an example task description.",
+    "dueDate": "2024-12-31",
+    "priority": "High",
+    "completed": false
+  }
+]
